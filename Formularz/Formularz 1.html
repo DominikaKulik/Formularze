@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		header{
+			float: left;
+			width: 15%;
+			background-color: pink;
+			font-size: 30px;
+			color: white;
+			text-align: center;
+			height: 35px;
+			border-radius: 13px
+
+		}
+		a{
+			
+			float: right;
+			margin: 0px 10px 0px 10px;
+			font-size: 30px;
+			background-color: pink;
+			color: white;
+			height: 35px
+			width: 100px;
+			border-radius: 5px;
+		    }
+		    .pasek{
+		    	background-color: mistyrose;
+		    	height: 35px;
+		    	width: 100%;
+
+		    }
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="pasek">
+	<header>Formularze</header>
+	<a href="Formularz 6.html">Formularz 6</a>
+	<a href="Formularz 5.html">Formularz 5</a>
+	<a href="Formularz 4.html">Formularz 4</a>
+	<a href="Formularz 3.html">Formularz 3</a>
+	<a href="Formularz 2.html">Formularz 2</a>
+	<a href="Formularz 1.html">Formularz 1</a>
+</div>
+<hr style="float: left; width: 40%; background-color: white; border: 0px;">
+    <section style="float: left;">
+        <h1>
+        	Formularz kontaktowy
+    	</h1>
+    <br /> 
+        <form action="mailto:dominika.kulik@tm1.edu.pl" method="post">
+            <label>
+            	Nazwisko:
+        	</label>
+        	<br /> 
+            <input type="text" name="nazw" size="30" />
+            <br />
+            <label>
+            	Imię:
+        	</label>
+        	<br />
+            <input type="text" name="imie" size="30" />
+            <br />
+            <br />
+            <label>
+            	Wykształcenie:
+            </label>
+            <br />
+            <input type="radio" name="wykszt" value="podstawowe" checked />Podstawowe<br />
+            <input type="radio" name="wykszt" value="średnie" />Średnie<br />
+            <input type="radio" name="wykszt" value="wyższe" />Wyższe<br /><br />
+            W jakim języku programujesz?<br />
+            <input type="checkbox" name="progr[]" value="Php" />Php<br />
+            <input type="checkbox" name="progr[1" value="JavaScript" />JavaScript<br />
+            <input type="checkbox" name="progr[]" value="Python" />Python<br />
+            <input type="checkbox" name="progr[]" value="C++" />C++<br />
+            <input type="checkbox" name="progr[]" value="Java" />Java<br /><br />
+            <input type="checkbox" name="opcje" maxlength="1" />Zgadzam się na przetwarzanie danych osobowych<br /><br /><br />
+            Wiek:
+            <br />
+            <select name="wiek">
+                <option>0-17</option>
+                <option>18-40</option>
+                <option>41-60</option>
+                <option>powyżej 60</option> 
+            </select>
+            <br />
+            <br />
+            Uwagi:
+            <br />
+            <textarea rows="6" cells="17">Wpisz uwagi
+        	</textarea>
+        	<br />
+        	<br />
+            <input id="input1" type="submit" name="wyslij" value="Wyślij" />
+            &nbsp;&nbsp;
+            <input id="input1" type="reset" name="zeruj" value="Wyczyść" /> 
+        </form>
+    </section>
+<footer style="background-color: mistyrose; color: pink; width: 100%; text-align: center; position: absolute; bottom: 0; font-size: 20px;">Dominika Kulik</footer>
+
+</body>
+</html>
